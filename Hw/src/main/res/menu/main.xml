@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/toolbar_menu_right"
+        android:icon="@mipmap/icon_menu"
+        android:orderInCategory="100"
+        android:title="Go To Next"
+        app:showAsAction="always"/>
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="code.support.demo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/google"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Test.TestActivity_1"></activity>
+
+        <activity android:name=".Test.TestActivity_2"></activity>
+
+        <activity android:name=".Test.TestActivity_3"></activity>
+
+        <activity
+            android:name=".activity.Activity_01"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_02"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_03"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_04"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_05"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_06"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_07"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_08"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_09"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_10"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_11"
+            android:theme="@style/MainTheme"/>
+        <activity
+            android:name=".activity.Activity_12"
+            android:theme="@style/MainTheme"/>
+
+        <activity android:name=".Test.TestActivity_4"></activity>
+
+        <activity
+            android:name=".Material.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".Material.UserInfo"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

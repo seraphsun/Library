@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/classic_bottom_navigation_container"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/dimen_56"
+             android:background="?selectableItemBackgroundBorderless"
+             android:paddingBottom="@dimen/dimen_10"
+             android:paddingLeft="@dimen/dimen_12"
+             android:paddingRight="@dimen/dimen_12"
+             android:paddingTop="@dimen/dimen_8">
+
+    <ImageView
+        android:id="@+id/classic_bottom_navigation_icon"
+        android:layout_width="@dimen/dimen_24"
+        android:layout_height="@dimen/dimen_24"
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="center"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/classic_bottom_navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lines="1"
+        android:textSize="@dimen/dimen_12"/>
+
+</FrameLayout>

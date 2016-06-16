@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IndicatorStyle">
+        <attr name="IndicatorTabStyle" format="reference"/>
+        <attr name="IndicatorIconStyle" format="reference"/>
+        <attr name="IndicatorCircleStyle" format="reference"/>
+        <attr name="IndicatorLineStyle" format="reference"/>
+        <attr name="IndicatorTitleStyle" format="reference"/>
+        <attr name="IndicatorUnderLineStyle" format="reference"/>
+    </declare-styleable>
+
+    <attr name="centered" format="boolean"/>
+    <attr name="selectedColor" format="color"/>
+    <attr name="strokeWidth" format="dimension"/>
+    <attr name="unselectedColor" format="color"/>
+
+    <declare-styleable name="IndicatorCircle">
+        <attr name="centered"/>
+        <attr name="fillColor" format="color"/>
+        <attr name="pageColor" format="color"/>
+        <attr name="android:orientation"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="snap" format="boolean"/>
+        <attr name="strokeColor" format="color"/>
+        <attr name="strokeWidth"/>
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorLine">
+        <attr name="centered"/>
+        <attr name="unselectedColor"/>
+        <attr name="selectedColor"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="strokeWidth"/>
+        <attr name="gapWidth" format="dimension"/>
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorTitle">
+        <attr name="clipPadding" format="dimension"/>
+        <attr name="footerColor" format="color"/>
+        <attr name="footerLineHeight" format="dimension"/>
+        <attr name="footerIndicatorHeight" format="dimension"/>
+        <attr name="footerIndicatorUnderlinePadding" format="dimension"/>
+        <attr name="footerPadding" format="dimension"/>
+        <attr name="selectedColor"/>
+        <attr name="selectedBold" format="boolean"/>
+        <attr name="android:textColor"/>
+        <attr name="android:textSize"/>
+        <attr name="titlePadding" format="dimension"/>
+        <attr name="topPadding" format="dimension"/>
+        <attr name="android:background"/>
+        <attr name="footerIndicatorStyle">
+            <enum name="none" value="0"/>
+            <enum name="triangle" value="1"/>
+            <enum name="underline" value="2"/>
+        </attr>
+        <attr name="linePosition">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="IndicatorUnderline">
+        <attr name="fades" format="boolean"/>
+        <attr name="fadeDelay" format="integer"/>
+        <attr name="fadeLength" format="integer"/>
+        <attr name="selectedColor"/>
+        <attr name="android:background"/>
+    </declare-styleable>
+
+    <declare-styleable name="NavigationTab">
+        <attr name="nt_color" format="color"/>
+        <attr name="nt_size" format="dimension"/>
+        <attr name="nt_weight" format="dimension"/>
+        <attr name="nt_factor" format="float"/>
+        <attr name="nt_titles" format="reference"/>
+        <attr name="nt_inactive_color" format="color"/>
+        <attr name="nt_active_color" format="color"/>
+        <attr name="nt_typeface" format="string"/>
+        <attr name="nt_corners_radius" format="dimension"/>
+        <attr name="nt_animation_duration" format="integer"/>
+        <attr name="nt_type" format="enum">
+            <enum name="line" value="0"/>
+            <enum name="point" value="1"/>
+        </attr>
+        <attr name="nt_gravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- MainTabHost -->
+    <declare-styleable name="MainTabHost">
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_select_color" format="color"/>
+        <attr name="text_normal_color" format="color"/>
+        <attr name="item_padding" format="dimension"/>
+    </declare-styleable>
+
+</resources>

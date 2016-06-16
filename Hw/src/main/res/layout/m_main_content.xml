@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <!-- CoordinatorLayout是一个动态协调子布局的容器 -->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- AppBarLayout是一个结合协调布局使用的标题栏，向上拖动实现隐藏的效果 -->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Toolbar是一个工具栏，用于标题栏的快速导航 -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <!-- ViewPager是一个翻页视图容器，用于展示画廊效果 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <!-- FloatingActionButton是一个悬浮按钮，用于界面的快捷操作 -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_dialog_email"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <code.support.demo.widget.navigationtab.MainTabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="horizontal"
+        app:item_padding="7dp"
+        app:text_normal_color="#ff777777"
+        app:text_select_color="#ff45c01a"
+        app:text_size="12sp"/>
+
+</LinearLayout>
